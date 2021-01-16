@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/gold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/gold_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gold_per_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/gold_per_s"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gold" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="177dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="increaseByClick"
+        android:text="@string/click"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gold_per_s" />
+
+    <Button
+        android:id="@+id/upgrade1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="upgrade1"
+        app:layout_constraintBottom_toTopOf="@+id/up2_label"
+        app:layout_constraintStart_toEndOf="@+id/up1"
+        />
+
+    <Button
+        android:id="@+id/upgrade2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:onClick="upgrade2"
+        app:layout_constraintBottom_toTopOf="@+id/up3_label"
+        app:layout_constraintStart_toEndOf="@+id/up2" />
+
+    <Button
+        android:id="@+id/upgrade3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:onClick="upgrade3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/up3" />
+
+    <Button
+        android:id="@+id/upgrade4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="upgrade4"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/upgrade5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="upgrade5"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/upgrade6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="upgrade6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/up1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/zero"
+        app:layout_constraintBaseline_toBaselineOf="@+id/upgrade1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/up2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/zero"
+        app:layout_constraintBaseline_toBaselineOf="@+id/upgrade2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/up1_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up1_label"
+        app:layout_constraintBottom_toTopOf="@+id/upgrade1"
+        app:layout_constraintEnd_toEndOf="@+id/upgrade1"
+        app:layout_constraintStart_toEndOf="@+id/up1" />
+
+    <TextView
+        android:id="@+id/up3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/zero"
+        app:layout_constraintBaseline_toBaselineOf="@+id/upgrade3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/up2_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up2_label"
+        app:layout_constraintBottom_toTopOf="@+id/upgrade2"
+        app:layout_constraintEnd_toEndOf="@+id/upgrade2"
+        app:layout_constraintStart_toEndOf="@+id/up2" />
+
+    <TextView
+        android:id="@+id/up3_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up3_label"
+        app:layout_constraintBottom_toTopOf="@+id/upgrade3"
+        app:layout_constraintEnd_toEndOf="@+id/upgrade3"
+        app:layout_constraintStart_toEndOf="@+id/up3" />
+
+    <TextView
+        android:id="@+id/up4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        app:layout_constraintBaseline_toBaselineOf="@+id/upgrade4"
+        app:layout_constraintEnd_toStartOf="@+id/upgrade4"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <TextView
+        android:id="@+id/up5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        app:layout_constraintBaseline_toBaselineOf="@+id/upgrade5"
+        app:layout_constraintEnd_toStartOf="@+id/upgrade5"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <TextView
+        android:id="@+id/up6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        app:layout_constraintBaseline_toBaselineOf="@+id/upgrade6"
+        app:layout_constraintEnd_toStartOf="@+id/upgrade6"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/upgrade3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up4_label"
+        app:layout_constraintBottom_toTopOf="@+id/upgrade4"
+        app:layout_constraintEnd_toEndOf="@+id/upgrade4"
+        app:layout_constraintStart_toEndOf="@+id/up4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up5_label"
+        app:layout_constraintBottom_toTopOf="@+id/upgrade5"
+        app:layout_constraintEnd_toEndOf="@+id/upgrade5"
+        app:layout_constraintStart_toEndOf="@+id/up5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up6_label"
+        app:layout_constraintBottom_toTopOf="@+id/upgrade6"
+        app:layout_constraintEnd_toEndOf="@+id/upgrade6"
+        app:layout_constraintStart_toEndOf="@+id/up6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
